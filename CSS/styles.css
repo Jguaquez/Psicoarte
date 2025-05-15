@@ -1,0 +1,361 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: white;
+}
+
+/* Barra superior */
+.top-bar {
+    background: linear-gradient(to right, #8b0000, black,  #8b0000);
+        font-family: "Permanent Marker", serif;
+        font-weight: 400;
+        font-style: normal;
+    color: white;
+    text-align: center;
+    padding: 5px;
+    font-size: 14px;
+}
+
+/* Navbar */
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: black;
+    padding: 10px 25px;
+}
+
+.logo img {
+    height: 90px;
+}
+
+/* Enlaces */
+.nav-links {
+    list-style: none;
+    display: flex;
+}
+
+.nav-links li {
+    margin: 0 17px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: white;
+    font-size: 19px;
+    font-family: "Permanent Marker", serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+/* Caja de búsqueda */
+.search-box {
+    display: flex;
+}
+
+.search-box input {
+    padding: 5px;
+    font-size: 16px;
+}
+
+.search-box button {
+    background-color: darkred;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+}
+
+/* Estilos del Carrusel */
+
+/* Ajustes generales del carrusel */
+.carousel {
+    background: linear-gradient(to left, rgb(0, 0, 0), rgb(0, 0, 0));
+    position: relative;
+    overflow: hidden;
+    height: 100vh; /* Asegura que el carrusel ocupe toda la pantalla */
+}
+
+/* Ajusta las imágenes para que no se deformen */
+.carousel-item img {
+    width: 100%;
+    height: 100vh;
+    object-fit: cover;
+    filter: brightness(100%); /* Reduce el brillo */
+}
+
+/* Degradado sobre cada imagen */
+.carousel-item::after {
+    
+    content: "";
+    position: static;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to left, rgba(0, 0, 0, 0.048), rgba(0, 0, 0, 0.966));
+    z-index: 1;
+}
+
+/* Texto sobre el carrusel */
+.carousel-caption {
+    position: absolute;
+    bottom: 20%;
+    left: 10%;
+    z-index: 2; /* Se mantiene sobre el degradado */
+    color: white;
+    text-align: justify;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
+}
+
+/* Botones del carrusel */
+.carousel-control-prev, .carousel-control-next {
+    z-index: 3; /* Se asegura de que los controles estén encima */
+}
+
+/* Ajustes para pantallas más pequeñas */
+@media (max-width: 768px) {
+    .carousel {
+        height: 70vh; /* Reduce el tamaño en móviles */
+    }
+
+    .carousel-item img {
+        height: 70vh;
+    }
+
+    .carousel-caption {
+        bottom: 10%;
+        left: 5%;
+        font-size: 14px;
+    }
+}
+
+
+
+.slide {
+    width: 100%;
+    height: 450px;
+    position: absolute;
+    opacity: 0;
+    transition: opacity 1s ease-in-out;
+}
+
+.slide img {
+    width: 100%;
+    height: 150%;
+    object-fit: cover;
+}
+
+.caption {
+    position: absolute;
+    bottom: 1px;
+    width: 90%;
+    left: 50%;
+    height: 15%;
+    transform: translateX(-50%);
+    text-shadow: 
+        2px 2px 5px black,  /* Sombra abajo a la derecha */
+        -2px -2px 5px black, /* Sombra arriba a la izquierda */
+        -2px 2px 5px black,  /* Sombra abajo a la izquierda */
+        2px -2px 5px black,  /* Sombra arriba a la derecha */
+        2px 2px 5px black,  /* Sombra abajo a la derecha */
+        -2px -2px 5px black, 
+        -2px 2px 5px black,  
+        2px -2px 5px black,  
+        2px 2px 5px black,  
+        -2px -2px 5px black, 
+        -2px 2px 5px black,  
+        2px -2px 5px black;  
+
+    
+    color: white;
+    font-size: 24px;
+    text-align: justify;
+    padding: 10px;
+    object-fit: cover;
+    font-family: "Cinzel", serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+/* Efecto de iluminación roja en enlaces */
+.nav-links a:hover {
+    color: rgb(202, 6, 6);
+    text-shadow: 0px 0px 10px rgb(134, 1, 1);
+    transition: 0.3s ease-in-out;
+}
+ /*boton intsagram*/
+ .instagram-button {
+    display: inline-block;
+    background: linear-gradient(45deg, #833AB4, #E1306C, #FD1D1D); /* Efecto degradado de Instagram */
+    color: white;
+    font-size: 24px; /* Texto más grande */
+    font-weight: bold;
+    padding: 15px 35px; /* Aumenta el tamaño */
+    border-radius: 50px; /* Bordes más redondeados */
+    text-decoration: none;
+    transition: all 0.3s ease-in-out;
+    text-align: center;
+}
+
+.instagram-button:hover {
+    filter: brightness(1.2); /* Hace el botón más brillante al pasar el cursor */
+    transform: scale(1.1); /* Aumenta de tamaño ligeramente */
+}
+/* SECCIÓN ABOUT */
+.about-section {
+    background: linear-gradient(to right, #8b0000, black);
+    color: white;
+    padding: 80px 20px;
+    text-align: center;
+}
+
+.about-content {
+    
+    max-width: 1050px;
+    margin: auto;
+}
+
+.about-content h2 {
+    font-size: 36px;
+    margin-bottom: 20px;
+    font-family: "Permanent Marker", serif;
+    font-weight: 400;
+    font-style: normal;
+}
+.about-content P {
+    
+    font-family: "Cinzel", serif;
+    font-weight: 500;
+    font-style: normal;
+    text-align: justify;
+}
+
+
+
+/* SECCIÓN GALLERY */
+.gallery-container {
+    text-align: center;
+    background-color: black;
+    padding: 20px;
+}
+
+.gallery-title {
+    color: white;
+    font-size: 36px;
+    margin-bottom: 15px;
+    font-family: "Permanent Marker", serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+
+.gallery-carousel {
+    width: 80%;
+    margin: auto;
+    overflow: hidden;
+    position: relative;
+}
+
+.carousel-track {
+    display: flex;
+    gap: 10px;
+    transition: transform 0.5s ease-in-out;
+}
+
+.carousel-track img {
+    width: calc(100% / 3 - 10px);
+    height: auto;
+    cursor: pointer;
+    border-radius: 10px;
+    object-fit: cover;
+}
+.carousel-btn {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 60px; /* Ajusta el tamaño */
+    height: 60px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    border: none;
+    background-color: rgba(0, 0, 0, 0.26);
+    cursor: pointer;
+    z-index: 20;
+}
+
+/* Botón de retroceso */
+.prev {
+    left: -10px;
+    background-image: url('/images/left.png'); /* Cambia por tu imagen */
+}
+
+/* Botón de siguiente */
+.next {
+    right: -10px;
+    background-image: url('/images/right.png'); /* Cambia por tu imagen */
+}
+
+.carousel-btn:hover {
+    width: 75px; /* Ajusta el tamaño */
+    height: 75px;
+    
+}
+
+/* Modal */
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1000;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+    justify-content: center;
+    align-items: center;
+    overflow: auto; /* Permite desplazamiento */
+}
+
+.modal-content {
+    max-width: 75%;
+    max-height: 75%;
+}
+.modal-content-wrapper {
+    display: flex;
+    flex-direction: column; /* Asegura que la imagen y el texto estén en columna */
+    align-items: center;
+    justify-content: center;
+    background: rgba(0, 0, 0, 0.9);
+    padding: 20px;
+    border-radius: 10px;
+    max-width: 90%;
+    margin: auto;
+}
+
+.modal-description {
+    color: white;  /* Cambia el color del texto */
+    font-size: 16px;
+    text-align: center;
+    margin-top: 10px;
+    padding: 10px;
+    background: rgba(0, 0, 0, 0.7); /* Fondo semi-transparente */
+    border-radius: 5px;
+    max-width: 80%;
+}
+
+.close {
+    position: absolute;
+    top: 15px;
+    right: 25px;
+    color: white;
+    font-size: 30px;
+    cursor: pointer;
+}
+
