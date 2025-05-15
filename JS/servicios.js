@@ -13,7 +13,7 @@ function showService(service) {
         `,
         idea: `
             <h2>Crea tu Idea</h2>
-            <img src="/images/mascota.png" alt="Idea" width="50">
+            <img src="images/mascota.png" alt="Idea" width="50">
             <p>Si tienes una visión, un pensamiento oscuro o un concepto profundo que deseas transformar en arte, lo materializamos por ti. Convertimos tus ideas en una obra personalizada que exprese lo que las palabras no pueden decir, con la estética y la intensidad que caracterizan a Psicoarte.</p>
             
         `,
@@ -24,7 +24,7 @@ function showService(service) {
         `,
         portadas: `
             <h2>Diseño de Portadas</h2>
-            <img src="/images/portada1.png" alt="Idea" width="3">
+            <img src="images/portada1.png" alt="Idea" width="3">
             <p>Desde portadas hasta logos, stickers y piezas visuales, ofrecemos diseños que capturan la esencia del caos, la oscuridad y la transgresión. Si buscas una imagen que represente tu visión artística, filosófica o simbólica, Psicoarte la materializa con un estilo crudo, profundo y sin concesiones.</p>
            
         `
