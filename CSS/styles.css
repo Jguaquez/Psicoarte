@@ -293,13 +293,13 @@ body {
 /* Botón de retroceso */
 .prev {
     left: -10px;
-    background-image: url('../images/left.png'); /* Cambia por tu imagen */
+    background-image: url('https://media.githubusercontent.com/media/Jguaquez/Psicoarte/main/images/left.png'); /* Cambia por tu imagen */
 }
 
 /* Botón de siguiente */
 .next {
     right: -10px;
-    background-image: url('../images/right.png'); /* Cambia por tu imagen */
+    background-image: url('https://media.githubusercontent.com/media/Jguaquez/Psicoarte/main/images/right.png'); /* Cambia por tu imagen */
 }
 
 .carousel-btn:hover {
