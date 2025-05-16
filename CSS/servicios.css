@@ -120,7 +120,8 @@
 
 /* Información del correo */
 .correo-info {
-    background: rgba(255, 255, 255, 0.1);
+    background: rgba(156, 0, 0, 0.705);
+     background: linear-gradient(to bottom, #400000, #200000); /* Fondo degradado */
     padding: 15px 25px;
     border-radius: 10px;
     font-size: 18px;
