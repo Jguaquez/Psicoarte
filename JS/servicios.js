@@ -2,7 +2,7 @@ function showService(service) {
     const content = {
         fotografia: `
             <h2>Fotografía</h2>
-            <img src="images/fotografia.png" loading="lazy" alt="Fotografía" width="50">
+            <img src="https://media.githubusercontent.com/media/Jguaquez/Psicoarte/main/images/fotografia.png" loading="lazy" alt="Fotografía" width="50">
             <p>Sesiones de fotografía profesional, apturamos imágenes que trascienden lo convencional, explorando lo macabro, lo psicológico y lo visceral. Cada sesión es una narrativa visual que confronta lo reprimido, lo extraño y lo simbólico, fusionando arte y emoción en composiciones que inquietan e invitan a la reflexión.</p>
             
         `,
